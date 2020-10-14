@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Simon Dice</title>
+    <style>
+      body {
+        margin: 0;
+        background: #dedede;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .gameboard {
+        height: 100vh;
+        width: 100vh;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+        max-height: 60vh;
+        max-width: 60vh;
+      }
+
+      .color {
+        width: 50%;
+        height: 50%;
+        display: inline-block;
+      }
+
+      .left {
+        float: left;
+      }
+
+      .right {
+        float: left;
+      }
+
+      .blue {
+        background: #22a6b3;
+      }
+
+      .blue.light {
+        background: #7ed6df;
+      }
+
+      .purple {
+        background: #be2edd;
+      }
+
+      .purple.light {
+        background: #e056fd;
+      }
+
+      .orange {
+        background: #f0932b;
+      }
+
+      .orange.light {
+        background: #ffbe76;
+      }
+
+      .green {
+        background: #6ab04c;
+      }
+
+      .green.light {
+        background: #badc58;
+      }
+
+      .btn-start {
+        width: 500px;
+        height: 500px;
+        background: #ecf0f1;
+        color: #2c3e50;
+        font-size: 2.5rem;
+        position: absolute;
+        left: calc(50% - 250px);
+      }
+
+      .hide {
+        display: none;
+      }
+
+      .color:active {
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+        transform: scale(1.03);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gameboard">
+      <div id="blue" class="color blue left" data-color="blue"></div>
+      <div id="purple" class="color purple right" data-color="purple"></div>
+      <div id="orange" class="color orange left" data-color="orange"></div>
+      <div id="green" class="color green right" data-color="green"></div>
+      <button id="btnBegin" class="btn-start" onclick="startGame()">
+        Let's Begin!
+      </button>
+    </div>
+
+    <script
+      src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+      defer
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
