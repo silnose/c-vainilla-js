@@ -4,10 +4,6 @@
 
 JavaScript es un lenguaje de programación que se trabaja desde el navegador. Construye programas, conoce el entorno, los condicionales y las estructuras repetitivas. Aprende cuáles son y cómo se declaran las variables y las funciones de JS.
 
-## Comenzando 🚀
-
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
 #### Pre-requisitos 📋
 
 - Live Server VSCode
